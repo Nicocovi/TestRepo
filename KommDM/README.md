@@ -19,8 +19,9 @@ https://cisl-adapter.apps.adp.allianz/
 	* [Solution](#solution)
 	* [Visionary Scenario](#visionary-scenario)
 * [System Design](#Analysis)
-	* [Component Diagram](#component-diagram)
-	* [Access Control and Security](#access-control-and-security)
+	* [Authentication](#authentication)
+	* [Infrastructre](#infrastructre)
+	* [Accessibility](#accessibility) 
 * [Demo Scenario](#demo-scenario)
 * [Administrator Manual](#administrator-manual)
 	* [Infrastructure Setup](#infrastructure-setup)
@@ -245,7 +246,7 @@ The user first gets an overview of the available offers of class "Motor" since i
 
 The policies can be retrieved by the call:
 ``
-http://localhost:8090/api/offerings
+GET /offerings
 ``
 A description for the different types of classes should be given.
 
@@ -260,8 +261,8 @@ The calculation is done in the frontend but should be calculated throughout the 
 
 ##### API Calls
 
-The API calls have been implemented in the Main service.
-For more details: src/services/main/main.service.js
+Only the necessary (as the questions or offerings) API calls have been implemented in the main controller.
+For more details: Motorjourney-Angular/static/js/motor_journey.js
 
 ### Deployment and Configuration
 
@@ -368,6 +369,7 @@ The questions above can be changed regarding the needs for the journey. The "sel
 For more information please contact:
 
 [Martin Leichter](#https://github.developer.allianz.io/martin-leichter)
+
 [Nicolas Corpancho Villasana](#https://github.developer.allianz.io/nicolas-corpancho-villasana)
 
 ## Feedback
